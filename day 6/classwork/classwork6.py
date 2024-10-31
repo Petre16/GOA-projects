@@ -1,0 +1,8 @@
+print(20+20)
+print(25+25)
+print(30-25)
+print(20-15)
+print(2*2)
+print(4*5)
+print(1/1)
+print(10/2)
