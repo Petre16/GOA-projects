@@ -1,0 +1,23 @@
+print(12 < 23)
+print(32 < 3211)
+print(8865 < 3434)
+print(823 < 91)
+print(12 < 141)
+
+print(932 > 9)
+print(2443 > 2345)
+print(813 > 29339)
+print(54 > 32)
+print(9311 > 113)
+
+print(930 == 900)
+print(111 == 111)
+print(0 == 0)
+print(101 == 101)
+print(203 == 203)
+
+print(1223 != 22)
+print(2323 != 300)
+print(9425 != 827)
+print(2033 != 201)
+print(2932 != 234494)
