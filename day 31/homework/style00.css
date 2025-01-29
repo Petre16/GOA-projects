@@ -1,0 +1,52 @@
+body {
+    background-color: #252B42;
+}
+
+h4 {
+    color: #FFFFFF;
+}
+
+h6 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+div, h5 {
+    color: #FFFFFF;
+}
+
+button {
+    color: #FFFFFF;
+    text-align: right;
+    background-color: #23A6F0;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 37px;
+    text-align: center;
+}
+
+h3 {
+    color: #FFFFFF;
+    font-size: 13px;
+    text-align: center;
+}
+
+section {
+    text-align: right;
+}
+
+.button-div-2c {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#button-div-2i {
+    border: #23A6F0;
+    background-color: #252B42;
+}
+
+article {
+    text-align: center;
+}

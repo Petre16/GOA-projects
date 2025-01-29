@@ -1,0 +1,11 @@
+#button-1 {
+    background-color: cyan;
+    color: goldenrod;
+    border: 6px solid burlywood;
+}
+
+.paragragh {
+    color: turquoise;
+    background-color: indianred;
+    border: 3px red dotted;
+}
