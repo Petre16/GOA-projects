@@ -1,0 +1,9 @@
+#parent-div {
+    width: 50%;
+    height: 500px;
+}
+
+#child-div {
+    width: 20%;
+    height: 100px;
+}
