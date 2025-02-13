@@ -1,5 +1,5 @@
-#          1        2       2  3   4     5     6     7     8   9     10     11      12     13        14         15      16      17          18        19      
-list1 = ["Goa", "Numbers", 18, 0, 764, 1389, True, False, 999, 111, 00, "String", "name", "I", "Computer-PC", "cars", "BMW", "TOYOTA", "MERCEDES", "OPEL", "Honda"]
+#          0        1       2  3   4     5     6     7     8   9     10     11      12     13        14         15      16      17          18        19
+list1 = ["Goa", "Numbers", 18, 0, 764, 1389, True, False, 999, 111, 00, "String", "name", "I", "Computer-PC", "cars", "BMW", "TOYOTA", "MERCEDES", "OPEL"]
 
 print(list1[0]) # 1
 print(list1[1]) # 2
