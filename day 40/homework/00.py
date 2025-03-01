@@ -1,4 +1,10 @@
 # Sum of positive
 
 def positive_sum(arr):
-    return sum([item for item in arr if item > 0])
+    result = 0
+    
+    for number in arr:
+        if number > 0:
+            result += number
+            
+    return result

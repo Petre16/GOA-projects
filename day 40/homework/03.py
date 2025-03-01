@@ -1,4 +1,10 @@
 # Square(n) Sum
 
 def square_sum(numbers):
-    return sum(x ** 2 for x in numbers)
+
+    result = 0
+
+    for number in numbers:
+        result += number
+
+    return result

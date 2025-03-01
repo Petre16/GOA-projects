@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+#a-link {
+    color: saddlebrown;
+    text-decoration: line-through;
+}
+
+#a-link:hover {
+    color: black;
+    text-decoration: overline;
+}
+
+#a-link:visited {
+    background-color: green;
+    font-style: italic;
+    font-family: "Roboto";
+    font-weight: bold;
+}
