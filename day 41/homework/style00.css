@@ -1,0 +1,18 @@
+a {
+    color: rgb(123, 123, 123);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgba(255, 183, 0, 0.764);
+    background-color: rgb(109, 0, 0);
+    text-transform: uppercase;
+
+}
+
+a:visited {
+    color: rgb(81, 0, 255);
+}
