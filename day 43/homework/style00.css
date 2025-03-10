@@ -1,0 +1,30 @@
+#t1 {
+    border: 1px solid coral;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#t1 tr:nth-child(1) {
+    background-color: coral;
+    color: white;
+}
+
+#t1 tr:nth-child(2) {
+    color: black;
+    background-color: white;
+}
+
+#t1 tr:nth-child(3) {
+    color: black;
+    background-color: rgb(195, 195, 195);
+}
+
+#t1 tr:nth-child(4) {
+    color: black;
+    background-color: white;
+}
+
+#t1 tr:nth-child(5) {
+    color: black;
+    background-color: rgb(195, 195, 195);
+}
