@@ -1,0 +1,24 @@
+#d1, #d2, #d3 {
+    border-radius: 50%;
+    border-radius: 2px solid blue;
+    width: 200px;
+    height: 200px;
+}
+
+#s1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#d1 {
+    background-color: black;
+}
+
+#d2 {
+    background-color: green;
+}
+
+#d3 {
+    background-color: yellow;
+}
