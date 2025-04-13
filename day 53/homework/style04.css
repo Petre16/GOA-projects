@@ -1,0 +1,10 @@
+#d1 {
+    width: 300px;
+    height: 100px;
+    background-color: black;
+}
+
+#d1:hover {
+    width: 250px;
+    height: 50px;
+}

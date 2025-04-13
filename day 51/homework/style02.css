@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#parent {
+    width: 75%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.child {
+    width: 20%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: purple;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+#child-2 {
+    width: 20%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: purple;
+    border: 3px solid rgb(66, 5, 66);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+}

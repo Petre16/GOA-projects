@@ -1,0 +1,48 @@
+#s1 {
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    display: flex;
+}
+
+#s1 div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#d1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: red;
+}
+
+#d2 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: green;
+}
+
+#d3 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: purple;
+}
+
+#d4 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: blue;
+}
+
+#d5 {
+    position: absolute;
+    left: 400px;
+    top: 400px;
+    background-color: grey;
+}
