@@ -2,11 +2,11 @@
 
 def rental_car_cost(d):
     daily_rate = 40
-    total = d * daily_rate
+    res = d * daily_rate
 
     if d >= 7:
-        total -= 50
+        res -= 50
     elif d >= 3:
-        total -= 20
+        res -= 20
 
-    return total
+    return res
