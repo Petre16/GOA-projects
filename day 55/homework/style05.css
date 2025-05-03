@@ -1,0 +1,16 @@
+#rotate {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 50px auto;
+    animation: rotate360 2s linear infinite;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

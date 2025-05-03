@@ -1,0 +1,24 @@
+/* საკლასო დავალება:
+
+შექმენით ანიმაცია, რომელშიც იქნება 3 keyframe. ანიმაცია უნდა გაგრძელდეს 5 წამი, განმეორდეს უსასრულოდ, ის შეყოვნდეს 2 წამით და მისი სიჩქარის ფუნქცია იყოს ease-in.
+
+ხუთივე მნიშვნელობა გააერთიანეთ ერთ დეკლარაციაში */
+
+#d1 {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation: div1 5s ease-in 2s infinite;
+}
+
+@keyframes div1 {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.sidebar {
+    width: 250px;
+    background-color: #007bff;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+}
+.sidebar h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.sidebar ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.sidebar ul li i {
+    margin-right: 10px;
+}
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+.header .search-bar {
+    flex: 1;
+    margin: 0 20px;
+}
+.header input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.header .profile {
+    display: flex;
+    align-items: center;
+}
+.header .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.projects, .announcements, .trending {
+    margin-top: 20px;
+}
+.projects .project-card, .announcements .announcement-card, .trending .trending-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.projects .project-card {
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    vertical-align: top;
+}
+.projects .project-card:last-child {
+    margin-right: 0;
+}
+.announcements, .trending {
+    display: inline-block;
+    width: calc(50% - 20px);
+    vertical-align: top;
+}
+.announcements {
+    margin-right: 20px;
+}

@@ -1,0 +1,121 @@
+/* 1. Move a box from left to right */
+@keyframes moveRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(300px); }
+}
+.move-box {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    animation: moveRight 2s linear;
+}
+
+/* 2. Change background color from blue to red */
+@keyframes bgColorChange {
+    0% { background-color: blue; }
+    100% { background-color: red; }
+}
+.color-box {
+    width: 50px;
+    height: 50px;
+    animation: bgColorChange 5s linear;
+}
+
+/* 3. Rotate an element 360 degrees */
+@keyframes rotate360 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.rotate-box {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    animation: rotate360 2s linear infinite;
+}
+
+/* 4. Pulse effect */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+.pulse-box {
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+/* 5. Bouncing ball (3 times) */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }
+}
+.bounce-ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: bounce 1s ease-in-out 3;
+}
+
+/* 6. Infinite loading spinner */
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid lightgray;
+    border-top: 5px solid black;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+}
+
+/* 7. Animation that runs once */
+.run-once {
+    width: 50px;
+    height: 50px;
+    background-color: teal;
+    animation: moveRight 2s linear 1;
+}
+
+/* 8. Class toggle for looping and non-looping */
+.loop-animation {
+    animation: pulse 1s ease-in-out infinite;
+}
+.no-loop-animation {
+    animation: pulse 1s ease-in-out 1;
+}
+
+/* 9. Animation with 2s delay */
+.delayed-box {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    animation: moveRight 2s linear 1;
+    animation-delay: 2s;
+}
+
+/* 10. Sequence animation with delays */
+.sequence-box {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    animation: moveRight 2s linear 1;
+}
+.sequence-box:nth-child(1) { animation-delay: 0s; }
+.sequence-box:nth-child(2) { animation-delay: 2s; }
+.sequence-box:nth-child(3) { animation-delay: 4s; }
+
+/* 11. Fading effect */
+@keyframes fade {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.fade-box {
+    width: 50px;
+    height: 50px;
+    background-color: cyan;
+    animation: fade 10s linear;
+}

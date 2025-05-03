@@ -1,0 +1,44 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "article nav ads"
+        "footer footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    grid-area: header;
+    background-color: yellow;
+}
+
+article {
+    grid-area: article;
+    background-color: yellow;
+}
+
+nav {
+    grid-area: nav;
+    background-color: yellow;
+}
+
+ads {
+    grid-area: ads;
+    background-color: yellow;
+}
+
+footer {
+    grid-area: footer;
+    background-color: yellow;
+}
+
+header, article, nav, ads, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}

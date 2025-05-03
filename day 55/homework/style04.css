@@ -1,0 +1,12 @@
+@keyframes changeBackground {
+    0% {
+        background-color: blue;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+body {
+    animation: changeBackground 5s infinite alternate;
+}
