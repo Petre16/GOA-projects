@@ -1,0 +1,26 @@
+<!-- საკლასო დავალება:
+
+ვებსაიტზე დაამატეთ ერთი სათაური.
+
+როდესაც სათაურს დააკლიკებთ, ამ სათაურის განლაგება უნდა იყოს ცენტრში, მისი fontSize უნდა გახდეს 50px, fontWeight 900 და ტექსტის ფერი მწვანე -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hh11" onclick="something()">head</h1>
+    <script>
+        function something() {
+            let hh11 = document.getElementById("hh11");
+            hh11.style.textAlign = "center";
+            hh11.style.fontSize = "50px";
+            hh11.style.fontWeight = "900";
+            hh11.style.color = "green";
+        }
+    </script>
+</body>
+</html>

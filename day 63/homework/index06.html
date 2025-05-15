@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Status Toggle</title>
+    <style>
+        #status {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <p id="status">Offline</p>
+    <button onclick="goOnline()">Go Online</button>
+
+    <script>
+        function goOnline() {
+            let status = document.getElementById('status');
+            status.textContent = 'Online';
+            status.style.color = 'green';
+        }
+    </script>
+</body>
+</html>

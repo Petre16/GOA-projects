@@ -1,0 +1,24 @@
+<!-- საკლასო დავალება:
+
+ვებსაიტზე დაამატეთ ერთი ღილაკი და ერთი მთავარი სათაური.
+
+როდესაც ღილაკს დააკლიკებს მომხმარებელი, მთავარი სათაური უნდა განლაგდეს ცენტრში (textAlign) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">html</h1>
+    <button id="button" onclick="textAlign()">click me</button>
+    <script>
+        function textAlign() {
+            let h1 = document.getElementById('h1');
+            h1.style.textAlign = 'center';  
+        }
+    </script>
+</body>
+</html>
