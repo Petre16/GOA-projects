@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="alertForm">
+        <input type="text" id="alertInput" placeholder="Enter text">
+        <button type="button" onclick="alert(document.getElementById('alertInput').value)">Show Alert</button>
+    </form>
+
+    <form id="colorForm">
+        <input type="color" id="colorInput">
+        <button type="submit">Set Background</button>
+    </form>
+
+    <form id="nameForm">
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+        <button type="button" id="showNameBtn">Show Full Name</button>
+    </form>
+    <h1 id="fullName"></h1>
+    
+    <script src="script01.js"></script>
+</body>
+</html>
