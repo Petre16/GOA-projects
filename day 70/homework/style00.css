@@ -1,0 +1,13 @@
+#colorDiv {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
+
+#hideDiv {
+    width: 200px;
+    height: 50px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+}

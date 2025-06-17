@@ -1,0 +1,13 @@
+#toggleDiv {
+    width: 150px;
+    height: 100px;
+    background-color: lightblue;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#myImage {
+    width: 150px;
+    display: block;
+    margin-top: 10px;
+}

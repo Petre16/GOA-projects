@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Actions Example</title>
+    <link rel="stylesheet" href="style00.css">
+</head>
+<body>
+    <p id="myParagraph">Original paragraph text.</p>
+    <button onclick="document.getElementById('myParagraph').textContent = 'Paragraph text changed!'">
+        Change Paragraph Text
+    </button>
+    <br><br>
+
+    <div id="colorDiv"></div>
+    <button onclick="document.getElementById('colorDiv').style.backgroundColor = 'orange'">
+        Change Div Background Color
+    </button>
+    <br><br>
+
+    <h1 id="myHeading">Heading Text</h1>
+    <button onclick="document.getElementById('myHeading').style.fontSize = '48px'">
+        Change Heading Font Size
+    </button>
+    <br><br>
+
+    <div id="hideDiv">This div will be hidden.</div>
+    <button onclick="document.getElementById('hideDiv').style.display = 'none'">
+        Hide Div
+    </button>
+    <br><br>
+
+    <button onclick="alert('This is a custom alert message!')">
+        Show Alert
+    </button>
+</body>
+</html>
