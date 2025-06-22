@@ -1,0 +1,13 @@
+.card { border: 1px solid #ccc; padding: 10px; margin: 5px; }
+.highlight { padding: 5px; }
+.error { font-weight: bold; }
+.item { margin: 3px 0; }
+.button { padding: 5px 10px; background: #eee; border: 1px solid #aaa; cursor: pointer; }
+
+#movingDiv {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background: #b3d9ff;
+    margin-top: 20px;
+}
