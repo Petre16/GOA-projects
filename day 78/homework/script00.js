@@ -1,59 +1,59 @@
 let i = 1;
 do {
-    console.log(i);
+    console.log(i)
     i++;
-} while (i <= 5);
+} while (i <= 5)
 
 let j = 2;
 do {
-    console.log(j);
+    console.log(j)
     j += 2;
-} while (j <= 10);
+} while (j <= 10)
 
 let k = 10;
 do {
-    console.log(k);
+    console.log(k)
     k--;
-} while (k >= 1);
+} while (k >= 1)
 
 let number;
 do {
-    number = prompt("Enter a number greater than 100:");
-} while (number <= 100 && number !== null);
+    number = prompt("Enter a number greater than 100: ")
+} while (number <= 100 && number !== null)
 
 let total = 0;
 let n = 1;
 do {
-    total += n;
+    total += n
     n++;
-} while (n <= 10);
-console.log("Sum from 1 to 10 is:", total);
+} while (n <= 10)
+console.log("Sum from 1 to 10 is:", total)
 
-const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5]
 for (const num of numbers) {
-    console.log(num);
+    console.log(num)
 }
 
-const str = "Hello";
+const str = "Hello"
 for (const char of str) {
-    console.log(char);
+    console.log(char)
 }
 
-let sum = 0;
+let sum = 0
 for (const num of numbers) {
-    sum += num;
+    sum += num
 }
-console.log("Sum of array:", sum);
+console.log("Sum of array:", sum)
 
 for (const num of numbers) {
     if (num % 2 === 0) {
-        console.log("Even:", num);
+        console.log("Even:", num)
     }
 }
 
-const names = ["Petre", "David", "Giotgi"];
+const names = ["Petre", "David", "Giotgi"]
 for (const name of names) {
-    console.log(name);
+    console.log(name)
 }
 
 const person = {
@@ -63,11 +63,11 @@ const person = {
 };
 
 for (const key in person) {
-    console.log("Key:", key);
+    console.log("Key:", key)
 }
 
 for (const key in person) {
-    console.log("Value:", person[key]);
+    console.log("Value:", person[key])
 }
 
 let count = 0;
@@ -76,19 +76,19 @@ for (const key in person) {
 }
 console.log("Number of properties:", count);
 
-const keyToCheck = "age";
-let exists = false;
+const keyToCheck = "age"
+let exists = false
 for (const key in person) {
     if (key === keyToCheck) {
-        exists = true;
+        exists = true
         break;
     }
 }
-console.log(`${keyToCheck} exists:`, exists);
+console.log(`${keyToCheck} exists:`, exists)
 
-let keyList = "";
+let keyList = ""
 for (const key in person) {
-    keyList += key + ", ";
+    keyList += key + ", "
 }
-keyList = keyList.slice(0, -2);
-console.log("All keys:", keyList);
+keyList = keyList.slice(0, -2)
+console.log("All keys:", keyList)
