@@ -25,6 +25,7 @@ const filterNegatives = arr => arr.filter(num => num >= 0);
 (function(num) {
     console.log("Square:", num * num);
 })(5);
+
 (function(arr) {
     const sum = arr.reduce((acc, curr) => acc + curr, 0);
     console.log("Sum:", sum);
