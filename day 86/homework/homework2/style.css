@@ -14,8 +14,8 @@
 
 #info {
     background-color: hsl(0, 0%, 100%);
-    width: 400px;
-    height: 600px;
+    width: 350px;
+    height: 500px;
     border-radius: 20px;
     flex-direction: column;
     display: flex;
