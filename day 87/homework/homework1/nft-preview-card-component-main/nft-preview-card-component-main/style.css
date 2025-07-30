@@ -1,101 +1,89 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
 }
 
 body {
     background-color: hsl(217, 54%, 11%);
-    color: hsl(0, 0%, 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.card {
+#card {
     background-color: hsl(216, 50%, 16%);
     border-radius: 16px;
-    width: 375px;
+    width: 300px;
+    box-shadow: 0 10px 25px black;
+}
+
+#card-image {
+    border-radius: 16px;
+    width: 250px;
+    display: block;
+    position: relative;
+    margin: 20px 20px;
+}
+
+#card-content {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: hsl(0, 0%, 100%);
 }
 
-.card-image img {
-    width: 100%;
-    border-radius: 8px;
+#title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+#description {
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
     margin-bottom: 20px;
 }
 
-.card-content h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.card-content p {
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
+#card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.price {
+#card-info img {
+    width: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#price,
+#time-left {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    font-size: 13px;
 }
 
-.eth-icon {
-    font-size: 22px;
-    margin-right: 8px;
-}
-
-.price-amount {
-    font-size: 18px;
-    font-weight: 600;
+#price span {
     color: hsl(178, 100%, 50%);
 }
 
-.countdown {
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 20px;
+#time-left span {
+    color: hsl(215, 51%, 70%);
 }
 
-.creator {
-    display: flex;
+#creator {
+        display: flex;
     align-items: center;
-    margin-top: 20px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 15px;
 }
 
-.creator-img {
-    width: 32px;
-    height: 32px;
+#avatar {
+    width: 30px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.creator-name {
-    font-weight: 600;
-}
-
-@media (min-width: 768px) {
-    .container {
-        padding: 50px;
-    }
-    .card {
-        width: 500px;
-    }
+#creator-name {
+    color: hsl(0, 0%, 100%);
 }
