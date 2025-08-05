@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  color: hsl(24, 5%, 18%);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+main {
+  max-width: 730px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+article {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: hsl(24, 5%, 18%);
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: hsl(14, 45%, 36%);
+}
+
+p {
+  margin-bottom: 24px;
+  color: hsl(30, 10%, 34%);
+}
+
+ul, ol {
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+section:first-of-type {
+  background-color: hsl(330, 100%, 98%);
+  padding: 24px;
+  border-radius: 12px;
+}
+
+section:first-of-type h2 {
+  margin-top: 0;
+  color: hsl(332, 51%, 32%);
+}
+
+section:last-of-type ul li {
+  list-style-type: none;
+  padding: 6px 0;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+section:last-of-type ul li:last-child {
+  border-bottom: none;
+}
+
+
+@media (max-width: 480px) {
+  article {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  ul, ol {
+    padding-left: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 730px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+
+#h1-1 {
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+#p1 {
+  font-family: "outfit";
+}
+
+#s1 {
+  font-family: "outfit";
+}
+
+#h2-1 {
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+#ul-1 {
+  font-family: "outfit";
+}
+
+#h2-2 {
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+#ol-1 {
+  font-family: "outfit";
+}
+
+#h2-3 {
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+#p2 {
+  font-family: "outfit";
+}
+
+#ul-2 {
+  font-family: "outfit";
+}
+
+#str1, #str2, #str3, #str4, #str5, #str6, #str7, #str8, #str9, #str10, #str11, #str12, #str13 {
+  color: hsl(14, 45%, 36%);
+}
