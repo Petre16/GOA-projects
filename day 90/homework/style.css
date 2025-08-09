@@ -78,7 +78,7 @@ header p {
     border-color: hsl(212, 86%, 64%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
     .cards {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
