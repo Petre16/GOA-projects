@@ -83,8 +83,8 @@ header p {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
-            "supervisor team calculator"
-            ". karma .";
+        "supervisor team calculator"
+        ". karma .";
     }
 
     #supervisor {
