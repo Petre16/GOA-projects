@@ -52,38 +52,29 @@ function countdown5(from) {
 countdown5(5)
 
 
-function setTimeout1(fn) {
-    const setTimeout2 = Math.floor(Math.random() * 5000) + 1000
-    console.log(`Delaying function by ${setTimeout2}ms`)
-    setTimeout(fn, setTimeout2)
-}
+const logName = () => console.log("Data");
 
-setTimeout1(() => {
-    console.log("1-5 Seconds")
-})
+const delayFunc = () => {
+    const randomTime = Math.ceil(Math.random() * 5);
+    console.log(randomTime);
+
+    setTimeout(() => logName(), randomTime * 1000);
+};
+
+delayFunc();
 
 
 // 8
 
-function coin1() {
-    return new Promise((resolve, reject) => {
-        const isHeads = Math.random() < 0.5
-        setTimeout(() => {
-            if (isHeads) {
-                resolve("Heads")
-            } else {
-                reject("Tails")
-            }
-        }, 1000)
-    })
-}
+const myPromise = new Promise((resolve, reject) => {
+    let randomNum = Math.random();
+    console.log(randomNum);
 
-coin1()
-    .then(result => {
-        console.log(result)
-    })
-    .catch(error => {
-        console.log(error)
-    })
+    if (randomNum < 0.5) {
+        resolve("Heads");
+    } else {
+        reject("Tails");
+    }
+});
 
-console.log(new Promise(coin1))
+console.log(myPromise);
