@@ -1,20 +1,22 @@
-function createPromise(num1) {
-    return new Promise((resolve, reject) => {
-        if (num1 % 2 === 0) {
-            resolve("resolve")
-        } else {
-            reject("reject")
-        }
+const createPromise = num => {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            if (num % 2 === 0) {
+                res("resolve")
+            } else {
+                rej("reject")
+            }
+        }, 3000)
     })
 }
 
-function successHandler(message) {
-    console.log(message)
-}
+const myPromise = createPromise(16)
 
-function failureHandler(message) {
-    console.log(message)
-}
-
-createPromise(76).then(successHandler, failureHandler)
-createPromise(67).then(successHandler, failureHandler)
+myPromise.then(
+    (returnedValue) => {
+        console.log(`Success: ${returnedValue}`)
+    },
+    (returnedValue) => {
+        console.log(`Failure: ${returnedValue}`)
+    }
+)
