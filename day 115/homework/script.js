@@ -1,4 +1,4 @@
-function Example({
+function EL23({
     userRole,
     isAvailable,
     isDaytime,
