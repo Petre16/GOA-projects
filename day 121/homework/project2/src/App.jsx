@@ -3,7 +3,9 @@ import Card from "./components/Card.jsx";
 const App = () => {
   return (
     <>
-      <Card />
+      <Card>
+        <h1>Petre Sikmashvili</h1>
+      </Card>
     </>
   )
 }
