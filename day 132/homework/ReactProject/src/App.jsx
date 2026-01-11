@@ -1,9 +1,9 @@
-import Comp from "./components/Comp";
+import Students from "./components/Students.jsx";
 
 const App = () => {
   return (
     <>
-      <Comp />
+      <Students />
     </>
   )
 }
