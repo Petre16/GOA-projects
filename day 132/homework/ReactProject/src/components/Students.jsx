@@ -6,9 +6,15 @@ const Students = () => {
 
     return (
         <div>
-            {students.map((student, index) => (
-                <p key={index}>{student}</p>
-            ))}
+            <ul>
+                {
+                    students.map((el, i) => (
+                        <li key={i}>
+                            <p>{el}</p>
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
     );
 }
