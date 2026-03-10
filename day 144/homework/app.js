@@ -36,6 +36,7 @@ myEmitter.on('calculate', (number) => {
     console.log(`Doubled value: ${result}`)
 })
 myEmitter.emit('calculate', 10)
+
 // 3)
 
 process.stdin.on("data", input => {
