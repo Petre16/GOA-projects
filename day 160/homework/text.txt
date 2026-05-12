@@ -1,0 +1,6 @@
+db.film_collection.find({genres:["Sci-Fi","Action"]})
+db.film_collection.find({cast:["Keanu Reeves","Laurence Fishburne"]})
+db.film_collection.find({genres:"Sci-Fi"})
+db.film_collection.find({cast:"Anne Hathaway"})
+db.film_collection.find({genres:{$all:["Sci-Fi","Adventure"]}})
+db.film_collection.find({genres:{$all:["Action","Drama"]}})

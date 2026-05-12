@@ -1,0 +1,8 @@
+db.people_collection.createIndex({id: 1})
+db.people_collection.createIndex({bio: -1})
+db.people_collection.createIndex({age: 1})
+
+db.employee_collection.find({country: "Canada"}).explain("executionStats")
+executionTimeMillis: 21
+db.employee_collection.createIndex({country: 1})
+xecutionTimeMillis: 9

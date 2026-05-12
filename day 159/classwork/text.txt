@@ -1,0 +1,10 @@
+Level 159
+
+db.student_collection.find({}, {price: 1, rating: 1})
+db.student_collection.find({}, {dimensions: 0, tags: 0})
+db.student_collection.find({price: {$gt: 100}}).sort({price: -1})
+
+db.student_collection.countDocuments({price: {$gt: 50}})
+db.student_collection.countDocuments({rating: {$lte: 4}})
+db.student_collection.find({home: {$exists: true}})
+db.student_collection.find({home: {$exists: false}}).limit(5)

@@ -1,0 +1,11 @@
+db.products_collection.insertMany([{name: "iPhone 17", price: 1200, category: "Phone"}, {name: "Samsung S26", price: 800, category: "Phone"}, {name: "Xiaomi Pad 7", price: 1000, category: "Tablet"}, {name: "Xiaomi 17", price: 1100, category: "Phone"}])
+
+db.students_collection.insertMany([{name: "Nika", age: 24, courses: "CSS"}, {name: "Giorgi", age: 31, courses: "Java"}, {name: "Tomi", age: 3, courses: "JS"}])
+
+db.people_collection.updateOne({name: "Ana"}, {$set: {age: 25}})
+
+db.people_collection.updateOne({name: "Giorgi"}, {$set: {city: "Batumi"}})
+
+db.students_collection.updateOne({name: "David"}, {$set: {"address.city": "Kutaisi"}})
+
+db.students_collection.updateOne({name: "Ana"}, {$set: {"address.street": "Chavchavadze"}})

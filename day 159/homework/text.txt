@@ -1,0 +1,30 @@
+⁡⁣⁣⁢​‌‍‌1​⁡
+
+db.student_collection.find({}, {name: 1, price: 1, _id: 0})
+db.student_collection.find({}, {dimensions: 0})
+db.student_collection.find({}, {name: 1, rating: 1, _id: 0})
+db.student_collection.find({}, {"dimensions.width": 1, "dimensions.height": 1, _id: 0})
+db.student_collection.find({in_stock: true}, {name: 1, in_stock: 1, _id: 0})
+
+⁡⁣⁣⁢​‌‍‌2​⁡
+
+db.student_collection.find().limit(5)
+db.student_collection.find({ price: { $gt: 100 } }).limit(10)
+db.student_collection.find({ rating: { $ne: null } }).limit(3)
+db.student_collection.find({}, { name: 1, _id: 0 }).limit(7)
+db.student_collection.find().sort({ price: 1 }).limit(5)
+
+⁡⁣⁣⁢​‌‍‌3​⁡
+
+db.student_collection.countDocuments()
+db.student_collection.countDocuments({ in_stock: true })
+db.student_collection.countDocuments({ price: { $gt: 200 } })
+db.student_collection.countDocuments({ rating: { $exists: true, $ne: null } })
+
+⁡⁣⁣⁢​‌‍‌4​⁡
+
+db.student_collection.find({rating: {$exists: true}})
+db.student_collection.find({rating: {$exists: false}})
+db.student_collection.find({"dimensions.depth": {$exists: true}})
+db.student_collection.find({tags: {$exists: true}})
+db.student_collection.find({discount: {$exists: false}})

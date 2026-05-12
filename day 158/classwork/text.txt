@@ -1,0 +1,6 @@
+Level 158
+
+use main_db
+show collections
+db.student_collection.find({"dimensions.surname": "gvari"})
+db.student_collection.find({"dimensions.age": 100})

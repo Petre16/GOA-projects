@@ -1,0 +1,18 @@
+2
+db.employee_collection.find({year: {$gt: 2015}}).explain("executionStats")
+
+3
+db.employee_collection.find({brand: "Toyota"}).explain("executionStats")
+
+4
+db.employee_collection.find({year: {$gt: 2015}}).explain("executionStats")
+executionTimeMillis: 18
+totalDocsExamined: 30000
+db.employee_collection.createIndex({year: 1})
+db.employee_collection.find({year: {$gt: 2015}}).explain("executionStats")
+executionTimeMillis: 1
+totalDocsExamined: 0
+
+5
+db.employee_collection.createIndex({brand: 1, year: 1})
+db.employee_collection.find({brand: "Toyota", year: {$gt: 2015}}).explain("executionStats")

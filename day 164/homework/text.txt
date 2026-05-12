@@ -1,0 +1,25 @@
+// 3
+db.cars_collection.deleteOne({id: 1})
+db.cars_collection.deleteOne({price_usd: {$gt: 400}})
+db.cars_collection.deleteOne({is_used: false})
+db.cars_collection.deleteOne({rating: null})
+db.cars_collection.deleteOne({fuel_type: "Electric"})
+
+// 4
+db.cars_collection.deleteMany({price_usd: {$lt: 50}})
+db.cars_collection.deleteMany({is_used: false})
+db.cars_collection.deleteMany({rating: {$exists: false}})
+db.cars_collection.deleteMany({price_usd:{$gt: 300}, is_used: false})
+db.cars_collection.deleteMany({tags: {$exists: true, $size: 0}})
+
+// 5
+db.cars_collection.replaceOne({id: 2}, {id: 2, name: "Car", price: 28944})
+db.cars_collection.replaceOne({price_usd: {$gt: 300}}, {name: "Manqana", price: 300})
+db.cars_collection.replaceOne({id: 10}, {id: 10, info: {brand: "NewBrand", model: "NewModel"}, price: 500})
+
+let doc = db.cars_collection.findOne({ id: 3 })
+if (doc) {
+    db.cars_collection.replaceOne({id: 3}, {id: doc.id, brand: doc.brand, model: doc.model, price_usd: doc.price_usd})
+}
+
+db.cars_collection.replaceOne({id: 999}, {id: 999, name: "Does Not Exist", price: 0})

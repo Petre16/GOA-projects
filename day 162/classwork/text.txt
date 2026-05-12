@@ -1,0 +1,11 @@
+1
+db.film_collection.updateOne({userRating: {$gt: 9}}, {$set: {stitle: "Title"}})
+db.people_collection.insertMany([{name: "Petre"}, {name: "erteP"}, {age: 716}])
+
+
+2
+db.film_collection.updateOne({usetRating: 8}, {$push: {genres: "wasd"}})
+db.film_collection.updateOne({usetRating: 8}, {$push: {cast: "saxeli"}})
+
+db.film_collection.updateOne({usetRating: 8}, {$set: {language: "Georgian"}})
+db.film_collection.updateOne({usetRating: 8}, {$set: {featured: "oipuiy"}})
