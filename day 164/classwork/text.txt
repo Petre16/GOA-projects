@@ -1,8 +1,0 @@
-db.student_collection.deleteOne({name: "TukuJFHogg"})
-db.student_collection.deleteOne({name: "UjuGJNEYWb"})
-db.student_collection.deleteMany({rating: {$lt: 3.2}})
-db.student_collection.deleteMany({age: {$gt: 75}})
-
-db.people_collection.replaceOne({language: "Georgian"}, {name: "Saxeli"})
-db.people_collection.replaceOne({city: "Qalaqi"}, {version: "Versia"})
-db.people_collection.replaceOne({bio: "Bio Aris"}, {age: 32})

@@ -1,7 +1,0 @@
-.text {
-    display: inline-block;
-}
-
-#toggle:checked + .text {
-    transform: rotate(180deg);
-}

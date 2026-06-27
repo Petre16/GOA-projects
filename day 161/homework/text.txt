@@ -1,5 +1,0 @@
-db.film_collection.find({genres:{$all:["Sci-Fi","Adventure"]}})
-db.film_collection.find({cast:"Matthew McConaughey"})
-db.film_collection.find().sort({rating:-1}).limit(5)
-db.film_collection.find({releaseYear:{$lt:2010},rating:{$gt:8}})
-db.film_collection.find({director:"Christopher Nolan"}).sort({rating:-1})

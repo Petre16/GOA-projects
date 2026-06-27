@@ -1,5 +1,0 @@
-db.cars_collection.updateMany({model: "Golf"}, {$set: {color: "Black", is_used: false}})
-db.student_collection.updateOne({name: "goa"}, {$set: {rating: 10}}, {upsert: true})
-
-db.people_collection.findAndModify({query: {language: "Uyghur"}, update: {set: {language: "English"}, new: true}})
-db.people_collection.updateOne({name: "Reyhan Murat"}, {$unset: {bio: ""}})

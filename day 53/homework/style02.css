@@ -1,9 +1,0 @@
-#d1 {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-}
-
-#d1:hover {
-    transform: translate(50px);
-}

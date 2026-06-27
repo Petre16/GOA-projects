@@ -1,3 +1,0 @@
-​‌‍‌⁡⁢⁣⁢Level 161⁡​
-
-db.student_collection.find({tags: {$elemMatch: {$gte: 200, $lte: 300}}})
